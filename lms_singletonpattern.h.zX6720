@@ -1,0 +1,27 @@
+#ifndef LMS_SINGLETONPATTERN_H
+#define LMS_SINGLETONPATTERN_H
+
+#include "lms.h"
+#include "user.h"
+#include "libraryitem.h"
+#include "librarian.h"
+#include "book.h"
+#include "clerk.h"
+#include "dvd.h"
+#include "date.h"
+#include "student.h"
+
+using namespace std;
+
+class LMS_SingletonPattern
+{
+private:
+    static LMS* lms;
+public:
+    LMS_SingletonPattern();
+    LMS * getSystem();
+};
+
+#endif // LMS_SINGLETONPATTERN_H
+
+
